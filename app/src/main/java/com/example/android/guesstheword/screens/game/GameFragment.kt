@@ -67,10 +67,7 @@ class GameFragment : Fragment() {
             binding.wordText.text = newWord
         })
 
-        viewModel.score.observe(viewLifecycleOwner, Observer { newScore ->
-            binding.scoreText.text = newScore.toString()
 
-        })
         /** Setting up LiveData observation relationship **/
         viewModel.word.observe(viewLifecycleOwner, Observer { newWord ->
             binding.wordText.text = newWord
