@@ -94,6 +94,10 @@ class GameViewModel : ViewModel() {
             _word.value = wordList.removeAt(0)
         }
     }
+
+    private fun onGameFinish() {
+        TODO("Not yet implemented")
+    }
 }
 
 
